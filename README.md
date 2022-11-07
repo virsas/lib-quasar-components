@@ -35,3 +35,5 @@ This component can be used to show a clickable brand logo with configurable asse
 - Add storybook
 
 ## external test
+
+- commit 1
