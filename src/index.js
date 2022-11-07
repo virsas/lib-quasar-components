@@ -1,4 +1,4 @@
-function extendConf (conf, api) {
+function extendConf (conf) {
   conf.boot.push('~@virsas/quasar-app-extension-components/src/boot/index.js')
   conf.build.transpileDependencies.push(/@virsas[\\/]quasar-app-extension-components[\\/]src/)
 }
