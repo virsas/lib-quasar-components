@@ -1,0 +1,27 @@
+{
+  "name": "@virsas/quasar-app-extension-components",
+  "version": "0.0.0",
+  "description": "Virsas - Quasar2 / Vue3 components' library",
+  "keywords": [
+    "Virsas",
+    "Components",
+    "Quasar component library",
+    "Vue 3",
+    "Vue",
+    "Quasar 2",
+    "Quasar"
+  ],
+  "author": "Stefan Moravcik <stefan@virsas.com>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/virsas/lib/components-quasar"
+  },
+  "bugs": "https://gitlab.com/virsas/lib/components-quasar/issues",
+  "homepage": "https://www.virsas.com",
+  "devDependencies": {
+    "vue": "^3.2.41",
+    "quasar": "^2.10.1"
+  }
+}
