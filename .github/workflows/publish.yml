@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish package
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 env:
   MAJOR_VERSION: 1
-  MINOR_VERSION: 0
+  MINOR_VERSION: 1
 
 jobs:
   test:
@@ -23,14 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Keep artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: node_modules
-          path: |
-            node_modules
-          retention-days: 1
 
       - name: Test the code
         run: npm test
@@ -94,6 +86,8 @@ jobs:
           }
           EOF
       - name: Install dependencies
-        run: ls
+        run: npm ci
       - name: Publish package
-        run: cat package.json
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.TOKEN_NPM }}
